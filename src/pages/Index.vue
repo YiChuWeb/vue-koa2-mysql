@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div>你好d</div>
+    <div id="test"></div>
   </div>
 </template>
 <style>
@@ -8,7 +8,15 @@
 <script>
   export default {
     data () {
-        return
+        return {
+          zr:null
+        }
+    },
+    methods:{
+
+    },
+    mounted(){
+        console.log(1);
     }
   }
 </script>

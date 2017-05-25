@@ -15,23 +15,7 @@
   "dependencies": {
     "vue": "^2.2.2",
     "vue-router": "^2.2.0",
-    "bluebird": "^3.5.0",
-    "bole": "^3.0.2",
-    "bole-console": "^0.1.10",
-    "co-request": "^1.0.0",
-    "http-proxy": "^1.16.2",
-    "jsonwebtoken": "^7.4.0",
-    "koa": "^2.2.0",
-    "koa-bodyparser": "^4.2.0",
-    "koa-generic-session-mongo": "^0.3.1",
-    "koa-jwt": "^3.2.1",
-    "koa-mount": "^3.0.0",
-    "koa-router": "^7.1.1",
-    "koa-send": "^4.1.0",
-    "koa-session-minimal": "^3.0.4",
-    "koa-static-cache": "^5.0.1",
-    "mongoose": "^4.9.6",
-    "underscore": "^1.8.3"
+    "zrender": "^3.3.0"
   },
   "devDependencies": {
     "autoprefixer": "^6.7.2",
