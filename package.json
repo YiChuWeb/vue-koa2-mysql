@@ -5,8 +5,8 @@
   "author": "caandoll <caandoll@aliyun.com>",
   "private": true,
   "scripts": {
-    "dev": "node build/dev-server.js",
-    "build": "node build/build.js",
+    "dev": "node webpackConfig/build/dev-server.js",
+    "build": "node webpackConfig/build/build.js",
     "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",
     "e2e": "node test/e2e/runner.js",
     "test": "npm run unit && npm run e2e",
@@ -15,7 +15,7 @@
   "dependencies": {
     "vue": "^2.2.2",
     "vue-router": "^2.2.0",
-    /*node-----*/
+
     "bluebird": "^3.5.0",
     "bole": "^3.0.2",
     "bole-console": "^0.1.10",

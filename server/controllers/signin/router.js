@@ -8,12 +8,6 @@ const jwtUtil             = require(path.join(process.cwd(), "server/util/jwtUti
 const pwdUtil             = require(path.join(process.cwd(), "server/util/pwdUtil"));
 const config              = require(path.join(process.cwd(), "server/config"));
 const handler             = require(path.join(process.cwd(), "server/service/serverAdmin/handler"));
-const brandConfig         = require(path.join(process.cwd(), "server/brand.json"));
-
-router.get("/api/config",function(ctx, next){
-    let _this = ctx;
-    _this.body = brandConfig[config.brand];
-});
 
 /**
  * 登录
