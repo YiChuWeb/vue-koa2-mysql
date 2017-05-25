@@ -1,0 +1,109 @@
+{
+  "production": {
+    "ip": "0.0.0.0",
+    "port": "80",
+    "cluster": true,
+    "cdn": "/",
+    "brand": "ice",
+    "appinfo": {
+      "appkey": "6839153606",
+      "secretkey": "bcd3edfbc30e64ec46cab5c5fcad6813"
+    },
+    "mongodb": {
+      "cookieTime": 7200000,
+      "sessionTime": 86400000,
+      "on": true,
+      "host": "mongodb",
+      "port": "27017",
+      "schema": "dashboard",
+      "user": "",
+      "pass": ""
+    },
+    "proxy": [
+      {
+        "host": "http://dashboard-vehicle/",
+        "context": "vehicle"
+      },
+      {
+        "host": "http://dashboard-position/",
+        "context": "location"
+      },
+      {
+        "host": "http://dashboard-lvoms/",
+        "context": "lvoms"
+      },
+      {
+        "host": "http://dashboard-status/",
+        "context": "status"
+      },
+      {
+        "host": "http://dashboard-map-monitor/",
+        "context": "map-monitor"
+      }
+    ]
+  },
+  "testing": {
+    "ip": "0.0.0.0",
+    "port": "80",
+    "cluster": true,
+    "cdn": "/",
+    "brand": "ice",
+    "appinfo": {
+      "appkey": "6839153606",
+      "secretkey": "bcd3edfbc30e64ec46cab5c5fcad6813"
+    },
+    "mongodb": {
+      "cookieTime": 7200000,
+      "sessionTime": 86400000,
+      "on": true,
+      "host": "mongodb",
+      "port": "27017",
+      "schema": "dashboard",
+      "user": "",
+      "pass": ""
+    }
+  },
+  "development": {
+    "ip": "127.0.0.1",
+    "port": "3011",
+    "cluster": false,
+    "cdn": "/",
+    "brand": "ice",
+    "appinfo": {
+      "appkey": "9909756346",
+      "secretkey": "9fd4b70a1892bec00906d5dedf5ebea6"
+    },
+    "mongodb": {
+      "cookieTime": 7200000,
+      "sessionTime": 86400000,
+      "on": true,
+      "host": "139.224.211.163",
+      "port": "27017",
+      "schema": "dashboard",
+      "user": "",
+      "pass": ""
+    },
+    "proxy": [
+      {
+        "host": "http://127.0.0.1:3003/",
+        "context": "vehicle"
+      },
+      {
+        "host": "http://127.0.0.1:3001/",
+        "context": "location"
+      },
+      {
+        "host": "http://127.0.0.1:3005/",
+        "context": "lvoms"
+      },
+      {
+        "host": "http://127.0.0.1:3003/",
+        "context": "status"
+      },
+      {
+        "host": "http://127.0.0.1:3014/",
+        "context": "map-monitor"
+      }
+    ]
+  }
+}
